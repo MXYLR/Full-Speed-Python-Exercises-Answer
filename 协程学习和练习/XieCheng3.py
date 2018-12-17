@@ -73,3 +73,38 @@ if __name__=="__main__":
 最后生产者使用close()关闭了两个生成器,调用close()时会向对应的生成器抛出一个generatorExit异常,
 然后两个生成器分别捕获了这个异常并执行了相应的except下面的代码.
 '''
+'''
+输出结果如下:
+consumer 1 working
+sonsumer 1 recieve  0
+=======分割线======
+consumer 2 working
+sonsumer 2 recieve  0
+=======分割线======
+consumer 1 working
+sonsumer 1 recieve  1
+=======分割线======
+consumer 2 working
+sonsumer 2 recieve  1
+=======分割线======
+consumer 1 working
+sonsumer 1 recieve  4
+=======分割线======
+consumer 2 working
+sonsumer 2 recieve  4
+=======分割线======
+consumer 1 working
+sonsumer 1 recieve  9
+=======分割线======
+consumer 2 working
+sonsumer 2 recieve  9
+=======分割线======
+consumer 1 working
+sonsumer 1 recieve  16
+=======分割线======
+consumer 2 working
+sonsumer 2 recieve  16
+=======分割线======
+Consumer-1 has recieved [0, 1, 4, 9, 16]
+Consumer-2 has recieved [0, 1, 4, 9, 16]
+'''
